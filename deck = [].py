@@ -1,20 +1,25 @@
 import random
 deck = []
+totalcards= 52
 
 
 suit = ["club","spade","diamond","heart"]
-numbers = [2,3,4,5,6,7,8,9,10,"jack","queen","king","ace"]
+numbers = ["ace","two" ,"3","4","5" ,"6" ,"7","8","9","10","jack","queen","king"]
 
-for x in suit:
-  for y in numbers:
-   deck.append(x+" "+y) 
+for Suit in suit:
+  for Number in numbers:
+   deck.append(Suit+" "+Number) 
     
 player1=[]
 player2=[]
 
-card=random.deck 
+card=random(deck) 
 
-winner = False
+deckcut=len(deck)
+decksize=deckcut//2
+player1=card[:decksize]
+print (player1)
+
 
 
   
