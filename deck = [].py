@@ -25,8 +25,7 @@ deck1=random.choice(deck)
 while(totalcards>0):
   print("dealing cards")
   print()
-  
-
+   
 
 
   
