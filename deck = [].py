@@ -13,12 +13,26 @@ for Suit in suit:
 player1=[]
 player2=[]
 
-card=random(deck) 
+deck1=random.choice(deck) 
 
-deckcut=len(deck)
-decksize=deckcut//2
-player1=card[:decksize]
-print (player1)
+
+player1 = deck1
+player2 = deck1
+
+deckcut = len(deck)
+decksize = deckcut//2
+hand1 = deck1 [:decksize]
+hand2 = deck1 [decksize:]
+
+
+
+
+
+  
+print (hand1)
+print  (hand2)
+
+
 
 
 
