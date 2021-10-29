@@ -7,8 +7,7 @@ playerone=0
 player2=0
 score1=0
 score2=0
-dealcards=[]
-score=[]
+
 
 deck = []
 
@@ -27,13 +26,13 @@ deck1=random.choice(deck)
 while(totalcards>0):
  print("dealing cards")
  print()
- Output = (deck, player1, player2)
+ Output = dealcards(deck, player1, player2)
  deck = Output[0]
  player1 = Output[1]
  player2 = Output[2]
  print()
  time.sleep(5)
- scoreup = (player1, player2, score1, score2)
+ scoreup = score(player1, player2, score1, score2)
  score1 = scoreup[0]
  score2 = scoreup[1]
  totalcards -= 2
