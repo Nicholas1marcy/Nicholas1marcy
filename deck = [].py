@@ -1,4 +1,5 @@
 import random
+import time
 
   
 totalcards = 52
@@ -23,9 +24,19 @@ player2=[]
 deck1=random.choice(deck) 
 
 while(totalcards>0):
-  print("dealing cards")
-  print()
-   
+ print("dealing cards")
+ print()
+ Output = dealCard(deck, player1, player2)
+ deck = Output[0]
+ player1 = Output[1]
+ player2 = Output[2]
+ print()
+ time.sleep(5)
+ scoreup = score(player1, player2, score1, score2)
+ score1 = scoreup[0]
+ score2 = scoreup[1]
+ totalcards -= 2
+
 
 
   
