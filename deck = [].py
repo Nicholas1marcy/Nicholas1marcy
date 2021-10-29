@@ -1,7 +1,14 @@
 import random
-deck = []
-totalcards= 52
 
+  
+totalcards = 52
+playerone=0
+player2=0
+score1=0
+score2=0
+
+
+deck = []
 
 suit = ["club","spade","diamond","heart"]
 numbers = ["ace","two" ,"3","4","5" ,"6" ,"7","8","9","10","jack","queen","king"]
@@ -15,24 +22,10 @@ player2=[]
 
 deck1=random.choice(deck) 
 
-
-player1 = deck1
-player2 = deck1
-
-deckcut = len(deck)
-decksize = deckcut//2
-hand1 = deck1 [:decksize]
-hand2 = deck1 [decksize:]
-
-
-
-
-
+while(totalcards>0):
+  print("dealing cards")
+  print()
   
-print (hand1)
-print  (hand2)
-
-
 
 
 
